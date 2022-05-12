@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "b9a5f645-9dca-4f14-849d-bb5fac1101e5",
+		"name": "Spring SLBFE API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Citizens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/citizens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Citizen from ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/citizens/dd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens",
+						"dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new citizen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Nipuna\",\n    \"lastName\": \"Upeksha\",\n    \"surName\": \"Rajapaksha Mudiyanselage\",\n    \"profession\": \"Software Engineer\",\n    \"gender\":\"m\",\n    \"passport\": {\n        \"passportId\": \"N321234\",\n        \"passportFile\": \"passport_file\"\n    },\n    \"birthCertificate\": {\n        \"birthCertificateId\": \"N324567\",\n        \"birthCertificateFile\": \"birth_certificate\"\n    },\n    \"nic\": {\n        \"nicId\": \"951761268V\",\n        \"nicFile\": \"nic_file\"\n    },\n    \"qualificationList\": [\n        \"Qualification1\",\"Qualification2\"\n    ],\n    \"email\": \"maneesha@gmail.com\",\n    \"phone\": \"+94912245891\",\n    \"mobile\": \"+94774178956\",\n    \"address\": \"30A, Upper Dickson Rd., Galle, Galle, 80000, Southern Province, Sri Lanka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/citizens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Citizen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/citizens/951761206v",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens",
+						"951761206v"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Citizen completely",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"firstName\": \"Maneesha\",\n    \"lastName\": \"Upeksha\",\n    \"surName\": \"Rajapaksha Mudiyanselage\",\n    \"jobTitle\": \"Software Engineer\",\n    \"passport\": {\n        \"passportId\": null,\n        \"passportFile\": null\n    },\n    \"birthCertificate\": {\n        \"birthCertificateId\": null,\n        \"birthCertificateFile\": null\n    },\n    \"nic\": {\n        \"nicId\": \"951761206v\",\n        \"nicFile\": \"nic_file\"\n    },\n    \"qualificationList\": [],\n    \"email\": \"nuswflt@gmail.com\",\n    \"phone\": \"+94912245891\",\n    \"mobile\": \"+94774178956\",\n    \"address\": \"30A, Upper Dickson Rd., Galle, Galle, 80000, Southern Province, Sri Lanka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/citizens/951761206v",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens",
+						"951761206v"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get contact info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Validation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

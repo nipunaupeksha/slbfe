@@ -22,6 +22,14 @@ const routes: Routes = [
   {
     path: 'citizen-update',
     loadChildren: () => import('./pages/citizen-update/citizen-update.module').then( m => m.CitizenUpdatePageModule)
+  },
+  {
+    path: 'citizen-view',
+    loadChildren: () => import('./pages/citizen-view/citizen-view.module').then( m => m.CitizenViewPageModule)
+  },
+  {
+    path: 'citizen-contact',
+    loadChildren: () => import('./pages/citizen-contact/citizen-contact.module').then( m => m.CitizenContactPageModule)
   }
 ];
 

@@ -29,4 +29,21 @@ export class CitizenItemComponent implements OnInit {
     this.router.navigate(['citizen-update'], navigationExtras)
   }
 
+  onContact(citizen: Citizen){
+    const navigationExtras: NavigationExtras = {
+      queryParams:{
+        special: JSON.stringify(citizen)
+      }
+    }
+    this.router.navigate(['citizen-contact'], navigationExtras)
+  }
+  onView(citizen:Citizen){
+    const navigationExtras: NavigationExtras = {
+      queryParams:{
+        special: JSON.stringify(citizen)
+      }
+    }
+    this.router.navigate(['citizen-view'], navigationExtras)
+  }
+
 }

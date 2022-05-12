@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Show Citizen Contact Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="citizen" [citizen]="citizen">
+    <div class="citizen-item-1">
+      <h3>{{citizen.firstName}} {{citizen.lastName}}</h3>
+      <h4>Email: {{citizen.email}}
+      </h4>
+      <h4>Mobile: {{citizen.mobile}}
+      </h4>
+      <h4>Phone: {{citizen.phone}}
+      </h4>
+      <h4>Address: {{citizen.address}}
+      </h4>
+    </div>
+  </div>
+</ion-content>
