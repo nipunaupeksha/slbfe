@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Show Citizens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-citizen-item *ngFor="let citizen of citizens" [citizen]="citizen" (onDeleteCitizen)="deleteCitizen(citizen)"></app-citizen-item>
+</ion-content>

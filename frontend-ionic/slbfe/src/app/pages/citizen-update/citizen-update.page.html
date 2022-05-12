@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button title="">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Create Citizen</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">First Name</ion-label>
+          <ion-input type="text" formControlName="firstName" name="firstName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Last Name</ion-label>
+          <ion-input type="text" formControlName="lastName" name="lastName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Sur Name</ion-label>
+          <ion-input type="text" formControlName="surName" name="surName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Gender</ion-label>
+          <ion-input type="text" formControlName="gender" name="gender"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Date of Birth</ion-label>
+          <ion-input type="text" formControlName="dateOfBirth" name="dateOfBirth"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Age</ion-label>
+          <ion-input type="tel" formControlName="age" name="age"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Profession</ion-label>
+          <ion-input type="text" formControlName="profession" name="profession"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Affiliation</ion-label>
+          <ion-input type="text" formControlName="affiliation" name="affiliation"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Contact Information</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" formControlName="email" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Phone</ion-label>
+          <ion-input type="tel" formControlName="phone" name="phone"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Mobile</ion-label>
+          <ion-input type="tel" formControlName="mobile" name="mobile"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Address</ion-label>
+          <ion-input type="text" formControlName="address" name="address"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Document Information</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Passport Id</ion-label>
+          <ion-input type="text" formControlName="passportId" name="passportId"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Passport File</ion-label>
+          <ion-input type="text" formControlName="passportFile" name="passportFile"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nic ID</ion-label>
+          <ion-input type="text" formControlName="nicId" name="nicId"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nid File</ion-label>
+          <ion-input type="text" formControlName="nicFile" name="nicFile"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Birth Certificate ID</ion-label>
+          <ion-input type="text" formControlName="birthCertificateId" name="birthCertificateId"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Birth Certificate File</ion-label>
+          <ion-input type="text" formControlName="birthCertificateFile" name="birthCertificateFile"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-button size="full" color="light" type="submit">Register</ion-button>
+  </form>
+</ion-content>

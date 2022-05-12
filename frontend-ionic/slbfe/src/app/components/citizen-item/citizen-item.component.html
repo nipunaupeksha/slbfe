@@ -1,0 +1,20 @@
+<div class="citizen">
+  <div class="citizen-item-1">
+    <h3>{{citizen.firstName}} {{citizen.lastName}}</h3>
+    <div class="citizen-icons-1">
+      <ion-icon name="eye-outline" color="success" (click)="onView(citizen)"></ion-icon>
+      <ion-icon name="call-outline" color="info" (click)="onContact(citizen)"></ion-icon>
+    </div>
+  </div>
+
+
+  <div class="citizen-item-2">
+    <h3>{{citizen.nic.nicId}}</h3>
+    <div class="citizen-icons-2">
+      <ion-icon name="trash-outline" color="danger" (click)="onDelete(citizen)"></ion-icon>
+      <ion-icon name="refresh-circle-outline" color="warning" (click)="onUpdate(citizen)"></ion-icon>
+    </div>
+  </div>
+
+</div>
+

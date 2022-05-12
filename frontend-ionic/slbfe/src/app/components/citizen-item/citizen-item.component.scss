@@ -1,0 +1,19 @@
+.citizen {
+  background: #000;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.citizen-item-1,
+.citizen-item-2 {
+  display: grid;
+  grid-template-columns: 3fr 0.2fr;
+}
+
+.citizen-icons-1,
+.citizen-icons-2 {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
